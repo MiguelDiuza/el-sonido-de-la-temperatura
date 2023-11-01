@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+      
+  <title>CodePen - Interactive Timeline</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<button class="button">
+  <a href="index.html">Inicio</a>
+</button>
+<div class="time-line">
+  <h1>Cambio Climatico</h1>
+  <!-- <div class="controls" data-direction="-1"></div>
+  <div class="controls next" data-direction="1"></div> -->
+  <div class="dates-overflow">
+    <div class="dates-wrap">
+      <div class="date active">
+        <div class="date-year">
+          <button class="cambiarFrecuenciaBtn" data-frecuencia="600"> </button>
+          <p >1870-1880</p>
+        </div>
+        <div class="date-content">
+          <div class="date-image"></div>
+          <div class="date-text">Equilibrio Climático</div>
+        </div>
+      </div>
+      <div class="date">
+        <div class="date-year">
+          <button class="cambiarFrecuenciaBtn" data-frecuencia="540"> </button>
+          <p>1880-1890</p>
+        </div>
+        <div class="date-content">
+          <div class="date-image"></div>
+          <div class="date-text">Aumento Gradual</div>
+        </div>
+      </div>
+      <div class="date">
+        <div class="date-year">
+          <button class="cambiarFrecuenciaBtn" data-frecuencia="500"> </button>
+          <p>1890-1900</p>
+        </div>
+        <div class="date-content">
+          <div class="date-image"></div>
+          <div class="date-text">Transición al Calentamiento</div>
+        </div>
+      </div>
+      <div class="date">
+        <div class ="date-year">
+          <button class="cambiarFrecuenciaBtn" data-frecuencia="340"> </button>
+          <p>1900-1910</p>
+        </div>
+        <div class="date-content">
+          <div class="date-image"></div>
+          <div class="date-text">Subida de la Temperatura</div>
+        </div>
+      </div>
+      <div class="date">
+        <div class="date-year">
+          <button class="cambiarFrecuenciaBtn" data-frecuencia="400"> </button>
+          <p>1910-1920</p>
+        </div>
+        <div class="date-content">
+          <div class="date-image"></div>
+          <div class="date-text">Cambio Inicial</div>
+        </div>
+      </div>
+      <div class="date">
+        <div class="date-year">
+          <button class="cambiarFrecuenciaBtn" data-frecuencia="500"> </button>
+          <p>1920-1930</p>
+        </div>
+        <div class="date-content">
+          <div class="date-image"></div>
+          <div class="date-text">Felices Años Moderados</div>
+        </div>
+      </div>
+      <div class="date">
+        <div class="date-year">
+          <button class="cambiarFrecuenciaBtn" data-frecuencia="640"> </button>
+          <p>1930-1940</p>
+        </div>
+        <div class="date-content">
+          <div class="date-image"></div>
+          <div class="date-text">Gran Oscilación Térmica</div>
+        </div>
+      </div>
+      <div class="date">
+        <div class="date-year">
+          <button class="cambiarFrecuenciaBtn" data-frecuencia="540"> </button>
+          <p>1940-1950</p>
+        </div>
+        <div class="date-content">
+          <div class ="date-image"></div>
+          <div class="date-text">Temperatura en Guerra</div>
+        </div>
+      </div>
+      <div class="date">
+        <div class="date-year">
+          <button class="cambiarFrecuenciaBtn" data-frecuencia="580"> </button>
+          <p>1950-1960</p>
+        </div>
+        <div class="date-content">
+          <div class="date-image"></div>
+          <div class="date-text">Estabilización Termal</div>
+        </div>
+      </div>
+      <div class="date">
+        <div class="date-year">
+          <button class="cambiarFrecuenciaBtn" data-frecuencia="500"> </button>
+          <p>1960-1970</p>
+        </div>
+        <div class="date-content">
+          <div class="date-image"></div>
+          <div class="date-text">Calentamiento Acelerado</div>
+        </div>
+      </div>
+      <div class="date">
+        <div class="date-year">
+          <button class="cambiarFrecuenciaBtn" data-frecuencia="640"> </button>
+          <p>1970-1980</p>
+        </div>
+        <div class="date-content">
+          <div class="date-image"></div>
+          <div class="date-text">La Conciencia Climática</div>
+        </div>
+      </div>
+      <div class="date">
+        <div class="date-year">
+          <button class="cambiarFrecuenciaBtn" data-frecuencia="820"> </button>
+          <p>1980-1990</p>
+        </div>
+        <div class="date-content">
+          <div class="date-image"></div>
+          <div class="date-text">Crisis Ambiental</div>
+        </div>
+      </div>
+      <div class="date">
+        <div class="date-year">
+          <button class="cambiarFrecuenciaBtn" data-frecuencia="880"> </button>
+          <p>1990-2000</p>
+        </div>
+        <div class="date-content">
+          <div class="date-image"></div>
+          <div class="date-text">Preocupación Global</div>
+        </div>
+      </div>
+      <div class="date">
+        <div class="date-year">
+          <button class="cambiarFrecuenciaBtn" data-frecuencia="920"> </button>
+          <p>2000-2010</p>
+        </div>
+        <div class="date-content">
+          <div class="date-image"></div>
+          <div class="date-text">Milenio Caluroso</div>
+        </div>
+      </div>
+      <div class="date">
+        <div class="date-year">
+          <button class="cambiarFrecuenciaBtn" data-frecuencia="1000"> </button>
+          <p>2010-2020</p>
+        </div>
+        <div class="date-content">
+          <div class="date-image"></div>
+          <div class="date-text">La Década Verde</div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+</div>
+<video autoplay loop muted>
+  <source src="video_IPhct4od.mp4" type="video/mp4">
+  Tu navegador no soporta el elemento de video.
+</video>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script  src="./script.js"></script>
+</body>
+</html>
